@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        // Ments el külön l, f, és j változókba a fenti objektum lastName, firstName, és job property-jeit! Ha valamelyik nincs megadva, akkor az érték legyen a “unknown” string!
+
+        const user = {
+            firstName: 'John',
+            lastName: 'Doe'
+        };
+
+        const {
+            lastName: l = 'unknown',
+            firstName: f = 'unknown',
+            job: j = 'unknown'
+        } = user;
+
+        console.log(l, f, j);
+
+    </script>
+</body>
+
+</html>
